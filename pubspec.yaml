@@ -38,6 +38,8 @@ dependencies:
   hive_flutter: ^1.1.0
   salomon_bottom_bar: ^3.3.2
   font_awesome_flutter: ^10.5.0
+  syncfusion_flutter_datepicker: ^22.1.39
+  flutter_lints: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -48,10 +50,8 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.2
   introduction_screen: ^3.1.11
   smooth_page_indicator: ^1.1.0
-  syncfusion_flutter_datepicker: ^22.1.39
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

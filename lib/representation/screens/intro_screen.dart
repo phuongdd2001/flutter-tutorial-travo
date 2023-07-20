@@ -108,9 +108,9 @@ class _IntroScreenState extends State<IntroScreen> {
                     builder: (context, snapshot) {
                       return Expanded(
                           flex: 4,
-                          child: ButtonWidget(
-                            title: snapshot.data != 2 ? 'Next' : 'Get started',
-                            ontap: () {
+                          child: ItemButtonWidget(
+                            data: snapshot.data != 2 ? 'Next' : 'Get started',
+                            onTap: () {
                               if (_pageController.page != 2) {
                                 _pageController.nextPage(
                                     duration: Duration(milliseconds: 200),

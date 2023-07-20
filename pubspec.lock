@@ -135,7 +135,7 @@ packages:
     source: hosted
     version: "1.0.0"
   flutter_lints:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: flutter_lints
       sha256: "2118df84ef0c3ca93f96123a616ae8540879991b8b57af2f81b76a7ada49b2a4"
@@ -366,7 +366,7 @@ packages:
     source: hosted
     version: "22.1.39"
   syncfusion_flutter_datepicker:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: syncfusion_flutter_datepicker
       sha256: fb1af72981e19b3bad4f07bc16a6235e5b998a4755852b9fed49a93ce556b36b
