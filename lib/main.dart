@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: routes,
       debugShowCheckedModeBanner: false,
+      onGenerateRoute: generateRoutes,
       home: const SplashScreen(),
     );
   }

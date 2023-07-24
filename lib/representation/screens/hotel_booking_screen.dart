@@ -2,15 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_tutorial_app/core/constants/dismension_constants.dart';
 import 'package:flutter_tutorial_app/core/extensions/date_ext.dart';
 import 'package:flutter_tutorial_app/core/helpers/asset_helper.dart';
+import 'package:flutter_tutorial_app/representation/screens/guest_and_room_booking_screen.dart';
+import 'package:flutter_tutorial_app/representation/screens/hotels_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/select_date_screen.dart';
 import 'package:flutter_tutorial_app/representation/widgets/app_bar_container.dart';
 import 'package:flutter_tutorial_app/representation/widgets/button_widget.dart';
 import 'package:flutter_tutorial_app/representation/widgets/item_booking_widget.dart';
 
 class HotelBookingScreen extends StatefulWidget {
-  const HotelBookingScreen({Key? key}) : super(key: key);
+  const HotelBookingScreen({Key? key, this.destination}) : super(key: key);
 
   static const String routeName = '/hotel_booking_screen';
+
+  final String? destination;
+
   @override
   State<HotelBookingScreen> createState() => _HotelBookingScreenState();
 }
@@ -54,11 +59,15 @@ class _HotelBookingScreenState extends State<HotelBookingScreen> {
               icon: AssetHelper.icoBed,
               title: 'Guest and room',
               description: '2 Guest in room',
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed(GuestAddRoomBookingScreen.routeName);
+              },
             ),
             ItemButtonWidget(
               data: 'Search',
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed(HotelsScreen.routeName);
+              },
             )
           ],
         ),

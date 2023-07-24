@@ -56,11 +56,14 @@ class ItemHotelWidget extends StatelessWidget {
                       width: kMinPadding,
                     ),
                     Text(hotelModel.location),
-                    Text(
-                      ' - ${hotelModel.awayKilometer} from destination',
-                      style:
-                          TextStyles.defaultStyle.subTitleTextColor.fontCaption,
-                      maxLines: 2,
+                    Expanded(
+                      child: Text(
+                        ' - ${hotelModel.awayKilometer} from destination',
+                        style:
+                            TextStyles.defaultStyle.subTitleTextColor.fontCaption,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                     ),
                   ],
                 ),

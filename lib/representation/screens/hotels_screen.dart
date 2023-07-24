@@ -5,15 +5,16 @@ import 'package:flutter_tutorial_app/representation/screens/detail_hotel_screen.
 import 'package:flutter_tutorial_app/representation/widgets/app_bar_container.dart';
 import 'package:flutter_tutorial_app/representation/widgets/item_hotel_widget.dart';
 
-class HotelScreen extends StatefulWidget {
-  const HotelScreen({Key? key}) : super(key: key);
+class HotelsScreen extends StatefulWidget {
+  const HotelsScreen({Key? key}) : super(key: key);
 
   static const String routeName = '/hotels_screen';
+
   @override
-  State<HotelScreen> createState() => _HotelScreenState();
+  State<HotelsScreen> createState() => _HotelsScreenState();
 }
 
-class _HotelScreenState extends State<HotelScreen> {
+class _HotelsScreenState extends State<HotelsScreen> {
   final List<HotelModel> listHotel = [
     HotelModel(
       hotelImage: AssetHelper.hotel1,
@@ -54,16 +55,17 @@ class _HotelScreenState extends State<HotelScreen> {
           children: listHotel
               .map(
                 (e) => ItemHotelWidget(
-                  hotelModel: e,
-                  onTap: () {
-                    Navigator.of(context)
-                        .pushNamed(DetailHotelScreen.routeName, arguments: e);
-                  },
-                ),
-              )
+              hotelModel: e,
+              onTap: () {
+                Navigator.of(context).pushNamed(DetailHotelScreen.routeName, arguments: e);
+              },
+            ),
+          )
               .toList(),
         ),
       ),
     );
   }
 }
+
+
