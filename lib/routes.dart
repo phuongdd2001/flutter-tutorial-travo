@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial_app/data/model/hotel_model.dart';
 import 'package:flutter_tutorial_app/data/model/room_model.dart';
-import 'package:flutter_tutorial_app/representation/screens/check_out_screen.dart';
+import 'package:flutter_tutorial_app/representation/screens/checkout_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/detail_hotel_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/guest_and_room_booking_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/hotel_booking_screen.dart';
@@ -10,6 +10,7 @@ import 'package:flutter_tutorial_app/representation/screens/intro_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/main_app.dart';
 import 'package:flutter_tutorial_app/representation/screens/rooms_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/select_date_screen.dart';
+import 'package:flutter_tutorial_app/representation/screens/select_room_screen.dart';
 import 'package:flutter_tutorial_app/representation/screens/splash_screen.dart';
 
 final Map<String, WidgetBuilder> routes = {
@@ -20,6 +21,7 @@ final Map<String, WidgetBuilder> routes = {
   RoomsScreen.routeName: (context) => RoomsScreen(),
   SelectDateScreen.routeName: (context) => SelectDateScreen(),
   GuestAddRoomBookingScreen.routeName: (context) => GuestAddRoomBookingScreen(),
+  SelectRoomScreen.routeName: (context) => SelectRoomScreen(),
 };
 
 MaterialPageRoute<dynamic>? generateRoutes(RouteSettings settings) {

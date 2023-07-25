@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial_app/core/constants/color_constants.dart';
 import 'package:flutter_tutorial_app/core/constants/dismension_constants.dart';
@@ -55,7 +54,8 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
             height: kMediumPadding,
           ),
           Container(
-            width: SizeConfig.screenWidth * 0.5,
+            width: 180,
+            //SizeConfig.screenWidth * 0.5
             decoration: BoxDecoration(
               color: ColorPalette.primaryColor.withOpacity(0.15),
               borderRadius: BorderRadius.circular(
@@ -169,7 +169,7 @@ class _CheckOutScreenState extends State<CheckOutScreen> {
                     height: kMediumPadding,
                   ),
                   ItemButtonWidget(
-                    data: 'PayMent',
+                    data: 'Payment',
                     onTap: () {
                       Navigator.of(context).popUntil((route) => route.settings.name == MainApp.routeName);
                     },

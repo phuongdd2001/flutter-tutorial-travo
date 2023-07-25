@@ -5,6 +5,7 @@ import 'package:flutter_tutorial_app/core/helpers/asset_helper.dart';
 import 'package:flutter_tutorial_app/core/helpers/image_helper.dart';
 import 'package:flutter_tutorial_app/data/model/hotel_model.dart';
 import 'package:flutter_tutorial_app/representation/screens/rooms_screen.dart';
+import 'package:flutter_tutorial_app/representation/screens/select_room_screen.dart';
 import 'package:flutter_tutorial_app/representation/widgets/button_widget.dart';
 import 'package:flutter_tutorial_app/representation/widgets/dash_line.dart';
 import 'package:flutter_tutorial_app/representation/widgets/item_utility_hotel.dart';
@@ -216,7 +217,7 @@ class _HotelDetailScreenState extends State<HotelDetailScreen> {
                               ItemButtonWidget(
                                   data: 'Select Room',
                                   onTap: () {
-                                    Navigator.of(context).pushNamed(RoomsScreen.routeName);
+                                    Navigator.of(context).pushNamed(SelectRoomScreen.routeName);
                                   }),
                               SizedBox(
                                 height: kMediumPadding,

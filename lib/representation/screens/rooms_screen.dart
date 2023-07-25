@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_tutorial_app/core/helpers/asset_helper.dart';
 import 'package:flutter_tutorial_app/data/model/room_model.dart';
-import 'package:flutter_tutorial_app/representation/screens/check_out_screen.dart';
+import 'package:flutter_tutorial_app/representation/screens/checkout_screen.dart';
 import 'package:flutter_tutorial_app/representation/widgets/app_bar_container.dart';
 import 'package:flutter_tutorial_app/representation/widgets/item_room_widget.dart';
 
